@@ -1,6 +1,6 @@
-# 🏛️ İskeçe (Xanthi) - Yunanistan Tanıtım Portalı
-> **Web Tasarımı ve Programlama Dersi | Dönem Ödevi & Yapay Zekâ Destekli Proje Raporu**  
-> **Geliştirici:** Öğrenci Projesi  
+# 🏛️ İskeçe (Xanthi) - Yunanistan Tanıtım Sitesi
+> **Web Tabanlı Programlama Dersi | Vize Ödevi & Yapay Zekâ Destekli Proje Raporu**  
+> **Geliştirici:** EMIRCHAN CHOTZA OGLOU 
 > **Kullanılan Teknolojiler:** HTML5, CSS3, JavaScript (ES6+), Google Antigravity AI  
 > **Canlı Yayın:** GitHub Pages  
 
