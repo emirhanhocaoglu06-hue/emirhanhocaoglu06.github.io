@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a4b8c"/>
+      <stop offset="100%" stop-color="#0d2546"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5c26b"/>
+      <stop offset="100%" stop-color="#d99b26"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#skyGrad)"/>
+  <!-- Clock Tower Silhouette -->
+  <path d="M26 54 L38 54 L36 30 L28 30 Z" fill="#ffffff" opacity="0.9"/>
+  <!-- Tower Crown -->
+  <path d="M25 30 L39 30 L37 20 L27 20 Z" fill="url(#goldGrad)"/>
+  <path d="M27 20 L32 12 L37 20 Z" fill="#ffffff"/>
+  <!-- Clock Face -->
+  <circle cx="32" cy="25" r="3.5" fill="#1a4b8c"/>
+  <circle cx="32" cy="25" r="1.5" fill="#f5c26b"/>
+  <!-- Traditional Gable Details -->
+  <path d="M12 54 L12 42 L20 36 L28 42 L28 54 Z" fill="#ffffff" opacity="0.4"/>
+  <path d="M36 54 L36 44 L44 38 L52 44 L52 54 Z" fill="#ffffff" opacity="0.4"/>
+  <circle cx="50" cy="18" r="4" fill="url(#goldGrad)" opacity="0.8"/>
+</svg>
+

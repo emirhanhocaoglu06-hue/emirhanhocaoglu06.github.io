@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="İskeçe (Xanthi), Yunanistan - Tarihi, Neoklasik Mimarisi, Dünyaca Ünlü Karnavalı, Tütün Mirası ve Karioka Lezzetiyle Batı Trakya'nın Kültür Başkenti Tanıtımı.">
+  <meta name="keywords" content="İskeçe, Xanthi, Yunanistan, Batı Trakya, Palia Poli, İskeçe Karnavalı, Saat Kulesi, Karioka, Nestos Kanyonu, Porto Lagos">
+  <meta name="author" content="Öğrenci Web Geliştirme Projesi">
+  
+  <title>İskeçe (Xanthi) - Binbir Rengin ve Kültürün Şehri | Yunanistan</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts & Ana CSS Dosyası (Ödev Standart Şablonu) -->
+    <link rel="preload" as="image" href="images/hero-bg.jpg?v=11">
+  <link rel="stylesheet" href="style.css?v=13">
+
+  <!-- Erken Görsel Hata Yakalayıcı (Fallback) -->
+  <script>
+    function handleImageError(img, title) {
+      img.onerror = null;
+      var safeTitle = encodeURIComponent(title || 'İskeçe Görseli');
+      img.src = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400"><rect width="600" height="400" fill="%231a365d"/><circle cx="300" cy="170" r="60" fill="%23e5a93b" opacity="0.8"/><path d="M270 210 L330 210 L320 130 L280 130 Z" fill="%23ffffff"/><text x="300" y="270" font-family="sans-serif" font-size="20" font-weight="bold" fill="%23ffffff" text-anchor="middle">' + safeTitle + '</text><text x="300" y="300" font-family="sans-serif" font-size="14" fill="%23cbd5e1" text-anchor="middle">İskeçe (Xanthi) - Yunanistan</text></svg>';
+    }
+  </script>
+</head>
+<body>
+
+  <!-- ===================================================================
+       1. ÜST GEZİNME ÇUBUĞU (HEADER & NAVBAR)
+       =================================================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="İskeçe Ana Sayfa">
+        <img src="assets/favicon.svg" alt="İskeçe Logosu" width="36" height="36">
+        <span>İSKEÇE <span class="sub">Ξάνθη</span></span>
+      </a>
+
+      <!-- Gezinme Menüsü Bağlantıları -->
+      <nav class="nav-menu" id="navMenu" aria-label="Ana Menü">
+        <a href="#genel-bakis" class="nav-link">Genel Bakış</a>
+        <a href="#tarihce" class="nav-link">Tarihçe & Mimari</a>
+        <a href="#gezilecek-yerler" class="nav-link">Gezilecek Yerler</a>
+        <a href="#karnaval" class="nav-link">Karnaval & Festivaller</a>
+        <a href="#gastronomi" class="nav-link">Gastronomi</a>
+        <a href="#interaktif" class="nav-link">İnteraktif Deneyim</a>
+        <a href="#ziyaret-rehberi" class="nav-link">Ziyaret Rehberi</a>
+      </nav>
+
+      <!-- Sağ Butonlar (Tema ve Mobil Menü) -->
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" title="Temayı Değiştir" aria-label="Karanlık/Aydınlık Tema">
+          🌙
+        </button>
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-expanded="false" aria-label="Mobil Menüyü Aç">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================
+       2. KARŞILAMA VE GİRİŞ BÖLÜMÜ (HERO SECTION)
+       =================================================================== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span>🇬🇷 Batı Trakya'nın Kültür İncisi</span>
+        </div>
+        <h1>
+          İSKEÇE <span class="greek">Ξάνθη</span>
+        </h1>
+        <p class="hero-description">
+          Rodop Dağları'nın eteklerinde, Osmanlı zarafetiyle neoklasik Yunan mimarisinin harmanlandığı; arnavut kaldırımlı sokakları, dünyaca ünlü karnavalı ve buram buram tütün kokan tarihiyle yaşayan bir açık hava müzesi.
+        </p>
+        <div class="hero-buttons">
+          <a href="#gezilecek-yerler" class="btn btn-gold">
+            <span>Şehri Keşfetmeye Başla</span> ➔
+          </a>
+          <a href="#interaktif" class="btn btn-outline" style="color: #ffffff; border-color: rgba(255,255,255,0.4);">
+            <span>Bilgi Yarışmasına Katıl</span> 🎯
+          </a>
+        </div>
+
+        <!-- Önemli İstatistikler -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>~65.000</h3>
+            <p>Nüfus</p>
+          </div>
+          <div class="stat-item">
+            <h3>1373</h3>
+            <p>Osmanlı Mirası</p>
+          </div>
+          <div class="stat-item">
+            <h3>1966</h3>
+            <p>Karnaval Geleneği</p>
+          </div>
+          <div class="stat-item">
+            <h3>390 km</h3>
+            <p>İstanbul'a Mesafe</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       BÖLÜM 1: GENEL BAKIŞ & ŞEHİR KİMLİĞİ
+       =================================================================== -->
+  <main>
+    <section class="section" id="genel-bakis">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Şehir Kimliği & Coğrafya</span>
+          <h2>Binbir Rengin Şehri: İskeçe</h2>
+          <p>Yunanistan'ın kuzeydoğusunda, kültürlerin ve geleneklerin asırlardır barış içinde iç içe geçtiği eşsiz bir coğrafya.</p>
+        </div>
+
+        <div class="overview-grid">
+          <div class="overview-text">
+            <h3>Doğunun Sıcaklığı ile Ege'nin Zarafeti</h3>
+            <p class="lead-p">
+              Yunanca adıyla <strong>Xanthi (Ξάνθη)</strong>, Osmanlı dönemindeki adıyla <strong>İskeçe</strong>, Rodop Dağları'nın Kosynthos (Kosinithos) Nehri ile buluştuğu stratejik bir vadide konumlanmıştır.
+            </p>
+            <p>
+              Tarih boyunca Makedonya ve Trakya'yı birbirine bağlayan tarihi <em>Via Egnatia</em> ticaret yolunun kilit noktalarından biri olan İskeçe; Müslüman Türk azınlığın, Rumların, Pomakların ve Ermeni tüccarların zengin mirasını aynı sokaklarda barındırır.
+            </p>
+
+            <div class="feature-bullets">
+              <div class="feature-bullet">
+                <div class="icon">🏛️</div>
+                <div>
+                  <strong>Avrupa'nın Koruma Altındaki İncisi</strong>
+                  <span>Eski Şehir (Palia Poli), Avrupa Birliği standartlarında Yunanistan'ın en iyi korunmuş tarihi yerleşimlerinden biridir.</span>
+                </div>
+              </div>
+              <div class="feature-bullet">
+                <div class="icon">🍂</div>
+                <div>
+                  <strong>Dünya Tütün Başkenti (19. Yüzyıl)</strong>
+                  <span>"Basma" ve "Yenidje" tipi aromatik tütünün küresel merkezi olarak bir dönem Balkanlar'ın "Küçük Paris'i" unvanını almıştır.</span>
+                </div>
+              </div>
+              <div class="feature-bullet">
+                <div class="icon">🎭</div>
+                <div>
+                  <strong>Balkanlar'ın En Coşkulu Karnavalı</strong>
+                  <span>Patras'tan sonra Yunanistan'ın en büyük ikinci karnavalıyla her ilkbaharda on binlerce turisti ağırlar.</span>
+                </div>
+              </div>
+            </div>
+
+            <a href="#tarihce" class="btn btn-primary btn-sm">Tarihsel Süreci İncele ➔</a>
+          </div>
+
+          <div class="overview-visual">
+            <div class="image-stack">
+              <img src="images/palia-poli-sokak.jpg?v=1" 
+                   alt="İskeçe Eski Şehir (Palia Poli) Tarihi Sokakları ve Cumbalı Konakları" 
+                   loading="lazy">
+              <button type="button" class="place-zoom-btn" data-lightbox 
+                      data-image="images/palia-poli-sokak.jpg?v=1" 
+                      data-title="İskeçe Eski Şehir (Παλιά Πόλη Ξάνθης)" 
+                      data-desc="Arnavut kaldırımlı dar sokaklar, Osmanlı dönemi ahşap cumbalı konakları ve neoklasik mimarinin bir arada yaşadığı yaşayan açık hava müzesi." 
+                      title="Görseli Büyüt" aria-label="Büyüt"
+                      style="position: absolute; bottom: 1rem; left: 1rem; z-index: 10;">🔍</button>
+            </div>
+            <div class="floating-card">
+              <div class="symbol">🏛️</div>
+              <div>
+                <h4>Palia Poli (Παλιά Πόλη)</h4>
+                <p>1200'den fazla tescilli tarihi konak ve yapı.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         BÖLÜM 2: TARİHÇE & MİMARİ MİRAS
+         =================================================================== -->
+    <section class="section section-alt" id="tarihce">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Geçmişten Günümüze</span>
+          <h2>Tarihçe & Mimari Miras</h2>
+          <p>Antik filozofların doğum yerinden tütün tüccarlarının görkemli malikanelerine uzanan asırlık hikaye.</p>
+        </div>
+
+        <div class="timeline-grid">
+          <!-- Antik Dönem -->
+          <article class="timeline-card">
+            <div class="era-year">M.Ö. 8. Yüzyıl</div>
+            <h4>Antik Abdera & Felsefe</h4>
+            <p>
+              İskeçe sahil şeridinde yer alan kadim Abdera (Avdira) kenti, atom teorisinin öncüsü <strong>Demokritos</strong> ve sofist düşünür <strong>Protagoras</strong> gibi filozofların anavatanıdır.
+            </p>
+            <span class="greek-tag">Άβδηρα & Δημόκριτος</span>
+          </article>
+
+          <!-- Osmanlı Dönemi -->
+          <article class="timeline-card">
+            <div class="era-year">1373 - 1912</div>
+            <h4>Osmanlı İdaresi & Hoşgörü</h4>
+            <p>
+              Çandarlı Kara Halil Hayreddin Paşa döneminde fethedilen şehir, Rumeli Beylerbeyliği'nin önemli bir kaza merkezi oldu. Saat Kulesi, bedestenler ve camiler bu dönemde inşa edildi.
+            </p>
+            <span class="greek-tag">Οθωμανική Περίοδος</span>
+          </article>
+
+          <!-- 1829 Depremi ve Yeniden Doğuş -->
+          <article class="timeline-card">
+            <div class="era-year">1829</div>
+            <h4>Büyük Deprem & Yeni Mimari</h4>
+            <p>
+              Şehri yerle bir eden iki büyük sarsıntının ardından zengin tüccarlar, Epir ve Batı Makedonyalı taş ustalarını çağırarak şehri neoklasik ve geleneksel Osmanlı mimarisiyle yeniden kurdu.
+            </p>
+            <span class="greek-tag">Αναγέννηση της Παλιάς Πόλης</span>
+          </article>
+
+          <!-- Tütün Altın Çağı -->
+          <article class="timeline-card">
+            <div class="era-year">1880 - 1930</div>
+            <h4>Altın Tütün Dönemi</h4>
+            <p>
+              Şark tütünü olarak bilinen aromatik "Yenice Tütünü", Avusturya-Macaristan ve Fransa borsalarında rekor kırdı. "Kapnapothikes" (Tütün Depoları) semti bu altın çağda doğdu.
+            </p>
+            <span class="greek-tag">Η Εποχή του Καπνού</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         BÖLÜM 3: GEZİLECEK YERLER & TARİHİ ESERLER (FİLTRELENEBİLİR)
+         =================================================================== -->
+    <section class="section" id="gezilecek-yerler">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Keşif Rotası</span>
+          <h2>Gezilecek Yerler & Tarihi Eserler</h2>
+          <p>İskeçe'nin Arnavut kaldırımlı sokaklarında zamanda yolculuğa çıkaran anıtlar ve doğa harikaları.</p>
+        </div>
+
+        <!-- Dinamik Filtreleme Butonları (JavaScript Destekli) -->
+        <div class="filter-tabs" role="tablist" aria-label="Yer Filtreleri">
+          <button type="button" class="filter-btn active" data-filter="all">Tümü (Όλα)</button>
+          <button type="button" class="filter-btn" data-filter="tarih">Tarihi Yapılar & Konaklar</button>
+          <button type="button" class="filter-btn" data-filter="muze">Müzeler & Sanat</button>
+          <button type="button" class="filter-btn" data-filter="doga">Doğa & Çevre</button>
+          <button type="button" class="filter-btn" data-filter="dini">Dini & Kültürel Miras</button>
+        </div>
+
+        <!-- Kartlar Grid Alanı -->
+        <div class="places-grid" id="placesGrid">
+          
+          <!-- 1. İskeçe Saat Kulesi -->
+          <article class="place-card" data-category="tarih">
+            <div class="place-image-wrapper" style="background-color: #CAD4DD; display: flex; align-items: center; justify-content: center;">
+              <span class="place-category-badge">Tarihi Yapı</span>
+              <img src="images/saat-kulesi.jpg?v=7" 
+                   alt="İskeçe Saat Kulesi (Xanthi Clock Tower)" 
+                   style="object-fit: contain; width: 100%; height: 100%;" 
+                   loading="lazy">
+              <button type="button" class="place-zoom-btn" data-lightbox 
+                      data-image="images/saat-kulesi.jpg?v=7" 
+                      data-title="İskeçe Saat Kulesi (Πύργος του Ρολογιού Ξάνθης)" 
+                      data-desc="1859-1870 yıllarında Osmanlı idarecisi Hacı Emin Ağa tarafından yaptırılan kule, şehrin ana toplanma noktası olan Demokrasi Meydanı'nın (Platia Dimokratias) en görkemli simgesidir." 
+                      title="Görseli Büyüt" aria-label="Büyüt">🔍</button>
+            </div>
+            <div class="place-content">
+              <div class="place-header">
+                <h3>İskeçe Saat Kulesi</h3>
+                <span class="place-greek-name">Πύργος του Ρολογιού Ξάνθης</span>
+              </div>
+              <p class="place-description">
+                1859-1870 yıllarında Osmanlı idarecisi Hacı Emin Ağa tarafından yaptırılan kule, şehrin ana toplanma noktası olan Demokrasi Meydanı'nın (Platia Dimokratias) en görkemli simgesidir. Neoklasik pencereleri ve çanıyla zamana meydan okumaktadır.
+              </p>
+              <div class="place-meta">
+                <span class="place-location">📍 Demokrasi Meydanı</span>
+                <span>1870 Yapımı</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Eski Şehir (Palia Poli) -->
+          <article class="place-card" data-category="tarih">
+            <div class="place-image-wrapper">
+              <span class="place-category-badge">Tarihi Doku</span>
+              <img src="images/palia-poli.jpg" 
+                   alt="İskeçe Eski Şehir Konakları" 
+                   loading="lazy">
+              <button type="button" class="place-zoom-btn" data-lightbox
+                      data-image="images/palia-poli.jpg"
+                      data-title="Eski Şehir (Palia Poli) — Παλιά Πόλη Ξάνθης"
+                      data-desc="Dar sokakları, cumbalı Osmanlı ahşap evleri ve zengin tüccarların gösterişli malikaneleriyle dolu 1976'dan beri koruma altındaki tarihi semt."
+                      title="Görseli Büyüt" aria-label="Büyüt">🔍</button>
+            </div>
+            <div class="place-content">
+              <div class="place-header">
+                <h3>Eski Şehir (Palia Poli)</h3>
+                <span class="place-greek-name">Παλιά Πόλη Ξάνθης</span>
+              </div>
+              <p class="place-description">
+                Dar sokakları, cumbalı Osmanlı ahşap evleri ve zengin tüccarların gösterişli malikaneleriyle doludur. 1976 yılında koruma altına alınmış olup her köşesinde çiçekli avlular ve nostaljik kafeler bulunur.
+              </p>
+              <div class="place-meta">
+                <span class="place-location">📍 Kuzey Yamaçları</span>
+                <span>UNESCO Aday Miras</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Halk ve Etnografya Müzesi -->
+          <article class="place-card" data-category="muze">
+            <div class="place-image-wrapper">
+              <span class="place-category-badge">Müze</span>
+              <img src="images/folklore-museum.jpg" 
+                   alt="İskeçe Folklor Müzesi" 
+                   loading="lazy">
+              <button type="button" class="place-zoom-btn" data-lightbox
+                      data-image="images/folklore-museum.jpg"
+                      data-title="Folklor ve Tarih Müzesi — Λαογραφικό Μουσείο Ξάνθης"
+                      data-desc="Tütün tüccarı Kougioumtzoglou kardeşlerin 1860'larda inşa ettirdiği ikiz neoklasik konakta hizmet veren müze. Altın varaklı tavanlar, geleneksel Trakya giysileri ve tütün işleme aletleri."
+                      title="Görseli Büyüt" aria-label="Büyüt">🔍</button>
+            </div>
+            <div class="place-content">
+              <div class="place-header">
+                <h3>Folklor ve Tarih Müzesi</h3>
+                <span class="place-greek-name">Λαογραφικό Μουσείο Ξάνθης</span>
+              </div>
+              <p class="place-description">
+                Tütün tüccarı Kougioumtzoglou kardeşlerin 1860'larda inşa ettirdiği ikiz neoklasik konakta hizmet verir. İç mekanda altın varaklı tavan süslemeleri, geleneksel Trakya giysileri ve tütün işleme aletleri sergilenir.
+              </p>
+              <div class="place-meta">
+                <span class="place-location">📍 Antika Caddesi 7</span>
+                <span>Hafta İçi Açık</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Vistonida Gölü ve Porto Lagos -->
+          <article class="place-card" data-category="doga">
+            <div class="place-image-wrapper">
+              <span class="place-category-badge">Doğa & Lagün</span>
+              <img src="images/porto-lagos.jpg?v=2" 
+                   alt="Porto Lagos ve Agios Nikolaos Manastırı" 
+                   loading="lazy">
+              <button type="button" class="place-zoom-btn" data-lightbox
+                      data-image="images/porto-lagos.jpg?v=2"
+                      data-title="Porto Lagos &amp; Vistonida &mdash; Limni Vistonida &amp; Porto Lagos"
+                      data-desc="Iskece'ye 25 km uzakliktaki lagun golu. Ahsap kopruyle ulasilan Aziz Nikolaos Kilisesi, flamingolar ve yuzlerce kus turuyle Ramsar Doga Alani."
+                      title="Gorseli Buyut" aria-label="Buyut">&#128269;</button>
+            </div>
+            <div class="place-content">
+              <div class="place-header">
+                <h3>Porto Lagos & Vistonida</h3>
+                <span class="place-greek-name">Λίμνη Βιστωνίδα & Πόρτο Λάγος</span>
+              </div>
+              <p class="place-description">
+                İskeçe'ye 25 km uzaklıktaki lagün gölü. Suyun üzerinde ahşap köprülerle birbirine bağlanan Aziz Nikolaos (Agios Nikolaos) Kilisesi, yüzlerce kuş türü ve kış aylarında flamingolara ev sahipliği yapar.
+              </p>
+              <div class="place-meta">
+                <span class="place-location">📍 Vistonida Lagünü</span>
+                <span>Ramsar Doğa Alanı</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Nestos Nehri ve Kanyonu -->
+          <article class="place-card" data-category="doga">
+            <div class="place-image-wrapper">
+              <span class="place-category-badge">Kanyon & Doğa</span>
+              <img src="images/nestos-kanyonu.jpg?v=2" 
+                   alt="Nestos Kanyonu ve Mesta Karasu" 
+                   loading="lazy">
+              <button type="button" class="place-zoom-btn" data-lightbox
+                      data-image="images/nestos-kanyonu.jpg?v=2"
+                      data-title="Nestos Kanyonu (Mesta Karasu) — Στενά Νέστου"
+                      data-desc="Rodop Dağları&apos;nı yararak Ege Denizi&apos;ne dökülen nehrin muhteşem vadisi. Kayalara oyulmuş tarihi patika, kano-rafting turları ve eski tren yolu."
+                      title="Görseli Büyüt" aria-label="Büyüt">🔍</button>
+            </div>
+            <div class="place-content">
+              <div class="place-header">
+                <h3>Nestos Kanyonu (Mesta Karasu)</h3>
+                <span class="place-greek-name">Στενά Νέστου</span>
+              </div>
+              <p class="place-description">
+                Rodop Dağları'nı yararak Ege Denizi'ne dökülen nehrin oluşturduğu muhteşem vadi. Kayalara oyulmuş tarihi yürüyüş patikası, kano-rafting turları ve eski tren yolu ile doğaseverlerin vazgeçilmez rotasıdır.
+              </p>
+              <div class="place-meta">
+                <span class="place-location">📍 Toxotes (Okçular)</span>
+                <span>Trekking & Kano</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Tarihi Tütün Depoları Semti -->
+          <article class="place-card" data-category="tarih">
+            <div class="place-image-wrapper">
+              <span class="place-category-badge">Sanayi Mirası</span>
+              <img src="images/hatzidakis-evi.jpg" 
+                   alt="Manos Hatzidakis Evi ve Tütün Depoları" 
+                   loading="lazy">
+              <button type="button" class="place-zoom-btn" data-lightbox
+                      data-image="images/hatzidakis-evi.jpg"
+                      data-title="Tütün Hanları & Hatzidakis Evi"
+                      data-desc="Manos Hatzidakis Evi ve Tütün Depoları"
+                      title="Görseli Büyüt" aria-label="Büyüt">🔍</button>
+            </div>
+            <div class="place-content">
+              <div class="place-header">
+                <h3>Tütün Hanları & Hatzidakis Evi</h3>
+                <span class="place-greek-name">Καπναποθήκες & Οικία Χατζιδάκι</span>
+              </div>
+              <p class="place-description">
+                19. yüzyıl sonlarında inşa edilen devasa 'K' ve 'Pi' planlı tuğla tütün hangarları ile Oscar ödüllü besteci Manos Hatzidakis'in doğduğu görkemli konak; kentin endüstriyel ve sanatsal kimliğinin tanığıdır.
+              </p>
+              <div class="place-meta">
+                <span class="place-location">📍 Kapnemporon Caddesi</span>
+                <span>Endüstriyel Anıt</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7. Ahmediye & Çınar Camii -->
+          <article class="place-card" data-category="dini">
+            <div class="place-image-wrapper">
+              <span class="place-category-badge">Dini Miras</span>
+              <img src="images/cami.jpg" 
+                   alt="İskeçe Camileri ve Dini Eserler (Ahmediye & Çınar)" 
+                   loading="lazy">
+              <button type="button" class="place-zoom-btn" data-lightbox
+                      data-image="images/cami.jpg"
+                      data-title="Ahmediye & Çınar Camileri"
+                      data-desc="İskeçe Camileri ve Dini Eserler (Ahmediye & Çınar)"
+                      title="Görseli Büyüt" aria-label="Büyüt">🔍</button>
+            </div>
+            <div class="place-content">
+              <div class="place-header">
+                <h3>Ahmediye & Çınar Camileri</h3>
+                <span class="place-greek-name">Τζαμί Αχμεδιγιέ & Πλατάνου</span>
+              </div>
+              <p class="place-description">
+                İskeçe Müslüman Türk toplumunun ibadet merkezi olan tarihi camiler; klasik Osmanlı taş işçiliği, minareleri ve şadırvanlarıyla yüzyıllardır kentin hoşgörü iklimini yaşatmaya devam etmektedir.
+              </p>
+              <div class="place-meta">
+                <span class="place-location">📍 Ahiriyan & Eski Mahalle</span>
+                <span>İbadete Açık</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         BÖLÜM 4: KÜLTÜR, KARNAVAL & FESTİVALLER
+         =================================================================== -->
+    <section class="section section-alt" id="karnaval">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Coşku & Gelenek</span>
+          <h2>Kültür, Karnaval & Festivaller</h2>
+          <p>Her ilkbahar ve sonbaharda sokakları dolduran müzik, kostümler ve Trakya neşesi.</p>
+        </div>
+
+        <!-- Büyük Karnaval Vurgu Alanı -->
+        <div class="carnival-banner">
+          <div class="carnival-grid">
+            <div>
+              <span class="badge" style="background: rgba(229,169,59,0.3); color: #f5c26b;">Yılda Bir Kez</span>
+              <h3>Balkanlar'ın Efsanesi: <span class="gold">İskeçe Karnavalı</span></h3>
+              <p>
+                Yunanca adıyla <strong>Ξανθιώτικο Καρναβάλι</strong>, 1966 yılından bu yana her yıl Ortodoks Hristiyan takvimindeki "Temiz Pazartesi" (Clean Monday) öncesinde coşkuyla kutlanır. Rio ve Venedik ruhunu Balkan misafirperverliğiyle buluşturur.
+              </p>
+
+              <div class="carnival-highlights">
+                <div class="highlight-box">
+                  <h4>🎉 Büyük Kostümlü Geçit (Megali Parelasis)</h4>
+                  <p>Karnaval Pazar günü binlerce maskeli dansçının ve tematik arabaların katılımıyla saatlerce süren dev festival yürüyüşü.</p>
+                </div>
+                <div class="highlight-box">
+                  <h4>🔥 Tzaras (Çaros) Yakımı Ritüeli</h4>
+                  <p>Karnavalın son gecesi Kosynthos Nehri köprüsü üzerinde, kötülükleri ve geçmiş yılın dertlerini kovmak amacıyla insan boyutunda bir kukla ateşe verilir ve görkemli havai fişekler patlatılır.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carnival-media">
+              <img src="images/karnaval.jpg" 
+                   alt="İskeçe Karnavalı Kostümlü Katılımcılar" 
+                   loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <!-- Diğer Festivaller -->
+        <div class="festival-cards">
+          <article class="fest-card">
+            <span class="fest-icon">🍂</span>
+            <span class="date-badge">Her Eylül Ayı</span>
+            <h4>Eski Şehir Şenlikleri</h4>
+            <p>
+              <em>Giortes Palias Polis (Γιορτές Παλιάς Πόλης)</em>: Tarihi sokakların her biri açık hava tavernalarına, caz sahnelerine ve resim galerilerine dönüşür.
+            </p>
+          </article>
+
+          <article class="fest-card">
+            <span class="fest-icon">🎶</span>
+            <span class="date-badge">Nisan / Mayıs</span>
+            <h4>Manos Hatzidakis Müzik Günleri</h4>
+            <p>
+              Büyük bestecinin anısına düzenlenen klasik müzik, koro ve Akdeniz melodilerinin tarihi konaklarda yankılandığı seçkin sanat haftası.
+            </p>
+          </article>
+
+          <article class="fest-card">
+            <span class="fest-icon">🌾</span>
+            <span class="date-badge">Her Cumartesi</span>
+            <h4>Tarihi İskeçe Pazarı (Pazari)</h4>
+            <p>
+              Balkanlar'ın en büyük açık hava pazarlarından biri. Rodop dağ balları, yerel zeytinler, baharatlar ve el dokumaları için rengarenk bir buluşma yeri.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         BÖLÜM 5: GASTRONOMİ LEZZETLERİ & KARYOKA
+         =================================================================== -->
+    <section class="section" id="gastronomi">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Damak Tadı</span>
+          <h2>İskeçe Gastronomisi & Meşhur Karioka</h2>
+          <p>Doğu Trakya, Anadolu göçmenleri ve Ege mutfağının harmanlandığı eşsiz lezzet durakları.</p>
+        </div>
+
+        <div class="gastro-grid">
+          <!-- Karioka ve Papaparaskevas -->
+          <article class="gastro-hero-card">
+            <div class="gastro-hero-image">
+              <span class="gastro-badge-flag">Tescilli Lezzet</span>
+              <img src="images/karioka.jpg" 
+                   alt="Meşhur İskeçe Karioka Çikolatası" 
+                   loading="lazy">
+              <button type="button" class="place-zoom-btn" data-lightbox 
+                      data-image="images/karioka.jpg" 
+                      data-title="Karioka (Καρυόκα) - Papaparaskevas" 
+                      data-desc="1926 yılında İskeçe'de icat edilen, taze Rodop cevizleri, bisküvi ve bitter çikolata ile sarılan dünyaca ünlü İskeçe tatlısı." 
+                      title="Görseli Büyüt" aria-label="Büyüt">🔍</button>
+            </div>
+            <div class="gastro-hero-content">
+              <h3>Karioka (Καρυόκα) & Papaparaskevas</h3>
+              <span class="gastro-origin">1926'dan Beri Süregelen Efsane Reçete</span>
+              <p>
+                İskeçe'nin dünyaca ünlü hilal biçimli tatlısı <strong>Karioka</strong>, 1926 yılında Doğu Trakya'dan göç eden <em>Giorgos Papaparaskevas</em> tarafından geliştirilmiştir.
+              </p>
+              <p>
+                İnce bisküvi, taze kırılmış Rodop cevizleri, kakao ve özel tereyağı harmanlandıktan sonra yoğun bitter çikolata ile kaplanır. Bugün Yunanistan'ın dört bir yanından insanlar bu tatlıyı yerinde tatmak için İskeçe'ye akın eder.
+              </p>
+              <div class="place-meta">
+                <span>📍 28is Oktovriou Caddesi 186</span>
+                <strong>Zahoroplasteio Papaparaskevas</strong>
+              </div>
+            </div>
+          </article>
+
+          <!-- Diğer Lezzetler Listesi (Gerçek Fotoğraflarla) -->
+          <div class="gastro-items-list">
+            
+            <!-- 1. Bougatsa -->
+            <div class="gastro-item">
+              <div class="gastro-thumb-wrap">
+                <img src="images/bougatsa.jpg" alt="Bougatsa Böreği" loading="lazy">
+                <button type="button" class="thumb-zoom" data-lightbox 
+                        data-image="images/bougatsa.jpg" 
+                        data-title="Bougatsa (Μπουγάτσα)" 
+                        data-desc="İskeçe sabah fırınlarının vazgeçilmezi: Çıtır el açması yufka, sıcak vanilyalı irmik kreması ve pudra şekeri." 
+                        title="Fotoğrafı Büyüt" aria-label="Büyüt">🔍</button>
+              </div>
+              <div class="gastro-item-info">
+                <h4>Bougatsa <span class="greek">(Μπουγάτσα)</span></h4>
+                <p>İncecik çıtır çıtır açılmış yufka arasına ılık irmik kreması veya tuzlu peynir konularak üzerine pudra şekeri ve tarçın dökülen nefis sabah böreği.</p>
+              </div>
+            </div>
+
+            <!-- 2. Saragli & Şekerpare -->
+            <div class="gastro-item">
+              <div class="gastro-thumb-wrap">
+                <img src="images/saragli.jpg" alt="Saragli Tatlısı" loading="lazy">
+                <button type="button" class="thumb-zoom" data-lightbox 
+                        data-image="images/saragli.jpg" 
+                        data-title="Saragli & Şekerpare (Σαραγλί)" 
+                        data-desc="Trakya'nın geleneksel şerbetli tatlısı: Bol cevizli rulo yufkalar, tereyağı ve hafif limonlu şerbet." 
+                        title="Fotoğrafı Büyüt" aria-label="Büyüt">🔍</button>
+              </div>
+              <div class="gastro-item-info">
+                <h4>Saragli & Şekerpare <span class="greek">(Σαραγλί)</span></h4>
+                <p>Osmanlı ve Balkan tatlı geleneğinin devamı niteliğindeki bol cevizli şerbetli rulolar ve geleneksel sakızlı kurabiyeler.</p>
+              </div>
+            </div>
+
+            <!-- 3. Souvlaki & Gyros -->
+            <div class="gastro-item">
+              <div class="gastro-thumb-wrap">
+                <img src="images/souvlaki.jpg" alt="Yunan Souvlaki ve Gyros" loading="lazy">
+                <button type="button" class="thumb-zoom" data-lightbox 
+                        data-image="images/souvlaki.jpg" 
+                        data-title="Souvlaki & Gyros (Σουβλάκι)" 
+                        data-desc="Odun ateşinde ızgara şiş etler, sıcak pita ekmeği, domates, soğan ve ev yapımı cacık sosu." 
+                        title="Fotoğrafı Büyüt" aria-label="Büyüt">🔍</button>
+              </div>
+              <div class="gastro-item-info">
+                <h4>Souvlaki & Gyros <span class="greek">(Σουβλάκι)</span></h4>
+                <p>Odun kömüründe pişirilen marine edilmiş etler, sıcacık pita ekmeği ve ev yapımı cacık (tzatziki) ile sunulan vazgeçilmez sokak lezzeti.</p>
+              </div>
+            </div>
+
+            <!-- 4. Taverna Mezeleri & Uzo -->
+            <div class="gastro-item">
+              <div class="gastro-thumb-wrap">
+                <img src="images/meze.jpg" alt="Geleneksel Taverna Mezeleri" loading="lazy">
+                <button type="button" class="thumb-zoom" data-lightbox 
+                        data-image="images/meze.jpg" 
+                        data-title="Taverna Mezeleri & Uzo (Ούζο & Μεζέδες)" 
+                        data-desc="Ege ve Trakya sofra kültürü: Fava, saganaki peyniri, kalamar tava, zeytinyağlılar ve taze deniz ürünleri." 
+                        title="Fotoğrafı Büyüt" aria-label="Büyüt">🔍</button>
+              </div>
+              <div class="gastro-item-info">
+                <h4>Taverna Mezeleri & Uzo <span class="greek">(Ούζο & Μεζέδες)</span></h4>
+                <p>Fava, kızarmış saganaki peyniri, Porto Lagos balıkçı köyünden gelen taze kalamar ve deniz mahsulleri eşliğinde geleneksel sofra kültürü.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         BÖLÜM 6: İNTERAKTİF ŞEHİR DENEYİMİ (QUIZ, SÖZLÜK, SEYAHAT MOTORU)
+         =================================================================== -->
+    <section class="section section-alt" id="interaktif">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Etkileşimli Alan</span>
+          <h2>İnteraktif İskeçe Deneyimi</h2>
+          <p>Bilgini test et, temel Yunanca kelimelerin sesli okunuşunu öğren ve seyahat rotanı hesapla.</p>
+        </div>
+
+        <div class="interactive-container">
+          
+          <!-- 1. Mini Bilgi Yarışması (Quiz) -->
+          <div class="interactive-panel">
+            <span class="badge">Öğren & Kazan</span>
+            <h3>İskeçe Bilgi Yarışması 🎯</h3>
+            <p class="subtitle">5 soruda kentin tarihini, tatlarını ve festivallerini ne kadar iyi öğrendiğini keşfet!</p>
+
+            <div id="quizActiveBox">
+              <div class="quiz-header">
+                <span>Soru <span id="quizCurrentNum">1</span> / 5</span>
+                <span>Test Modu</span>
+              </div>
+              <div class="quiz-progress-bar">
+                <div class="quiz-progress-fill" id="quizProgressFill"></div>
+              </div>
+
+              <div class="quiz-question-box">
+                <h4 id="quizQuestion">Soru yükleniyor...</h4>
+                <div class="quiz-options" id="quizOptions">
+                  <!-- Seçenekler JS ile dinamik oluşturulur -->
+                </div>
+              </div>
+
+              <div class="quiz-feedback" id="quizFeedback"></div>
+              <button type="button" class="btn btn-primary btn-sm quiz-next-btn" id="quizNextBtn">Sonraki Soru ➔</button>
+            </div>
+
+            <!-- Sonuç Ekranı -->
+            <div class="quiz-result-view" id="quizResultBox">
+              <div class="quiz-score-badge" id="quizFinalScore">0 / 5</div>
+              <h4>Yarışmayı Tamamladın! 🏆</h4>
+              <p id="quizScoreMsg">Tebrikler!</p>
+              <button type="button" class="btn btn-gold btn-sm" id="quizRestartBtn" style="margin-top: 1rem;">Testi Tekrar Başlat 🔄</button>
+            </div>
+          </div>
+
+          <!-- 2. Yunanca - Türkçe Sesli Şehir Sözlüğü -->
+          <div class="interactive-panel">
+            <span class="badge">Dil & İletişim</span>
+            <h3>Sesli Yunanca Şehir Sözlüğü 🔊</h3>
+            <p class="subtitle">İskeçe'de gezerken en çok işine yarayacak kelimeleri dinle ve öğren.</p>
+
+            <div class="vocab-search-wrap">
+              <input type="text" class="vocab-search-input" id="vocabSearchInput" placeholder="Sözlükte ara (Örn: Teşekkür, Günaydın, Saat Kulesi)..." aria-label="Sözlük Arama">
+            </div>
+
+            <div class="vocab-grid" id="vocabGrid">
+              
+              <div class="vocab-card">
+                <div class="vocab-terms">
+                  <h4>Ξάνθη</h4>
+                  <span class="tr">İskeçe (Şehir Adı)</span>
+                  <span class="pronounce">Okunuş: [Ksanthi]</span>
+                </div>
+                <button type="button" class="vocab-audio-btn" data-word="Ξάνθη" title="Telaffuzu Dinle" aria-label="Dinle">🔊</button>
+              </div>
+
+              <div class="vocab-card">
+                <div class="vocab-terms">
+                  <h4>Παλιά Πόλη</h4>
+                  <span class="tr">Eski Şehir (Old Town)</span>
+                  <span class="pronounce">Okunuş: [Palia Poli]</span>
+                </div>
+                <button type="button" class="vocab-audio-btn" data-word="Παλιά Πόλη" title="Telaffuzu Dinle" aria-label="Dinle">🔊</button>
+              </div>
+
+              <div class="vocab-card">
+                <div class="vocab-terms">
+                  <h4>Καλημέρα</h4>
+                  <span class="tr">Günaydın / İyi Günler</span>
+                  <span class="pronounce">Okunuş: [Kalimera]</span>
+                </div>
+                <button type="button" class="vocab-audio-btn" data-word="Καλημέρα" title="Telaffuzu Dinle" aria-label="Dinle">🔊</button>
+              </div>
+
+              <div class="vocab-card">
+                <div class="vocab-terms">
+                  <h4>Ευχαριστώ</h4>
+                  <span class="tr">Teşekkür Ederim</span>
+                  <span class="pronounce">Okunuş: [Efharisto]</span>
+                </div>
+                <button type="button" class="vocab-audio-btn" data-word="Ευχαριστώ" title="Telaffuzu Dinle" aria-label="Dinle">🔊</button>
+              </div>
+
+              <div class="vocab-card">
+                <div class="vocab-terms">
+                  <h4>Παρακαλώ</h4>
+                  <span class="tr">Lütfen / Rica Ederim</span>
+                  <span class="pronounce">Okunuş: [Parakalo]</span>
+                </div>
+                <button type="button" class="vocab-audio-btn" data-word="Παρακαλώ" title="Telaffuzu Dinle" aria-label="Dinle">🔊</button>
+              </div>
+
+              <div class="vocab-card">
+                <div class="vocab-terms">
+                  <h4>Καρυόκα</h4>
+                  <span class="tr">Karioka (Meşhur Çikolatalı Tatlı)</span>
+                  <span class="pronounce">Okunuş: [Karyoka]</span>
+                </div>
+                <button type="button" class="vocab-audio-btn" data-word="Καρυόκα" title="Telaffuzu Dinle" aria-label="Dinle">🔊</button>
+              </div>
+
+              <div class="vocab-card">
+                <div class="vocab-terms">
+                  <h4>Πόσο κοστίζει;</h4>
+                  <span class="tr">Fiyatı ne kadar?</span>
+                  <span class="pronounce">Okunuş: [Poso kostizi?]</span>
+                </div>
+                <button type="button" class="vocab-audio-btn" data-word="Πόσο κοστίζει;" title="Telaffuzu Dinle" aria-label="Dinle">🔊</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 3. Seyahat Süresi & Mesafe Hesaplayıcı -->
+        <div class="travel-calc-box">
+          <div class="calc-flex">
+            <div class="calc-inputs">
+              <span class="badge">Yol Rehberi</span>
+              <h3>İskeçe'ye Seyahat Süresi Hesaplayıcı 🚗</h3>
+              <p>Çıkış yapacağınız şehri seçerek İskeçe'ye olan karayolu mesafesini ve tahmini süreyi anında öğrenin.</p>
+              
+              <label for="calcCitySelect">Kalkış Şehri Seçiniz:</label>
+              <select id="calcCitySelect" class="calc-select" aria-label="Kalkış Şehri Seçin">
+                <option value="istanbul">İstanbul (Türkiye)</option>
+                <option value="edirne">Edirne / İpsala Sınırı</option>
+                <option value="thessaloniki">Selanik (Yunanistan)</option>
+                <option value="athens">Atina (Yunanistan)</option>
+              </select>
+            </div>
+
+            <div class="calc-results-card">
+              <h4>Tahmini Yolculuk Bilgileri</h4>
+              <p id="calcTip">İpsala - Kipi Sınır Kapısı üzerinden kesintisiz Egnatia Odos (A2) otobanı rotası.</p>
+              
+              <div class="calc-stat-numbers">
+                <div>
+                  <div class="calc-stat-val" id="calcDistance">390 km</div>
+                  <div class="calc-stat-lbl">Karayolu Mesafesi</div>
+                </div>
+                <div>
+                  <div class="calc-stat-val" id="calcTime">4.5 - 5 Saat</div>
+                  <div class="calc-stat-lbl">Tahmini Sürüş</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         BÖLÜM 7: ZİYARET REHBERİ, ULAŞIM & İLETİŞİM FORMU
+         =================================================================== -->
+    <section class="section" id="ziyaret-rehberi">
+      <div class="container">
+        <div class="section-header">
+          <span class="badge">Pratik İpuçları</span>
+          <h2>Ziyaretçi Rehberi & Seyahat Defteri</h2>
+          <p>İskeçe seyahatinizi kusursuz kılacak pratik bilgiler ve bize ulaştırabileceğiniz gezi notlarınız.</p>
+        </div>
+
+        <div class="guide-grid">
+          
+          <!-- Pratik Bilgiler Kartı -->
+          <div class="guide-tips-card">
+            <h3>Yola Çıkmadan Önce Bilmeniz Gerekenler</h3>
+            <div class="tips-list">
+              <div class="tip-item">
+                <span class="tip-icon">🛂</span>
+                <div class="tip-content">
+                  <h4>Vize & Sınır Geçişi</h4>
+                  <p>Bordo pasaport için geçerli Schengen vizesi gereklidir. Yeşil (hususi) pasaport sahipleri vizesiz giriş yapabilir. İpsala Sınır Kapısı araçla 1.5 saat mesafededir.</p>
+                </div>
+              </div>
+
+              <div class="tip-item">
+                <span class="tip-icon">💶</span>
+                <div class="tip-content">
+                  <h4>Para Birimi & Ödeme</h4>
+                  <p>Para birimi Euro (€)'dur. Kredi kartı restoran ve kafelerin %95'inde geçerlidir ancak tarihi pazarda nakit bulundurmak faydalıdır.</p>
+                </div>
+              </div>
+
+              <div class="tip-item">
+                <span class="tip-icon">🗣️</span>
+                <div class="tip-content">
+                  <h4>Dil & İletişim Kolaylığı</h4>
+                  <p>Resmi dil Yunancadır; ancak çarşıda, otellerde ve kafelerde Türkçe bilen esnaf ve azınlık halkı çok yaygındır, İngilizce de rahatlıkla konuşulur.</p>
+                </div>
+              </div>
+
+              <div class="tip-item">
+                <span class="tip-icon">🕒</span>
+                <div class="tip-content">
+                  <h4>Siesta & Açılış Saatleri</h4>
+                  <p>Geleneksel dükkanlar Salı, Perşembe ve Cumartesi öğleden sonra kapalı olabilir (14:30 - 17:30 arası siesta). Kafeler ve tavernalar ise gece yarılarına kadar canlıdır.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seyahat Mesajı / Ziyaretçi Defteri Formu -->
+          <div class="contact-form-card">
+            <h3>Gezi Notu Bırakın veya Soru Sorun ✍️</h3>
+            <p>İskeçe gezisi hakkında merak ettiklerinizi veya site hakkındaki değerlendirmenizi formu doldurarak iletebilirsiniz.</p>
+            
+            <form id="travelContactForm" novalidate>
+              <div class="form-group">
+                <label for="contactName">Adınız Soyadınız *</label>
+                <input type="text" id="contactName" class="form-control" placeholder="Örn: Emirhan Yılmaz" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">E-Posta Adresiniz *</label>
+                <input type="email" id="contactEmail" class="form-control" placeholder="ornek@ogrenci.edu.tr" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Gezi Notunuz / Mesajınız *</label>
+                <textarea id="contactMessage" class="form-control" placeholder="İskeçe hakkında düşünceleriniz, ziyaret planınız veya önerileriniz..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Mesajı Gönder</span> 📨
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       FOOTER & PROJE KÜNYESİ
+       =================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <div class="brand-logo" style="color: #ffffff; margin-bottom: 1rem;">
+            <img src="assets/favicon.svg" alt="İskeçe" width="32" height="32">
+            <span>İSKEÇE (XANTHI)</span>
+          </div>
+          <p>
+            Bu web sitesi, Web Tasarımı ve Programlama dersi ödevi kapsamında; HTML5, CSS3, modern JavaScript ve yapay zekâ (Google Antigravity) iş birliğiyle geliştirilmiş akademik bir şehir tanıtım projesidir.
+          </p>
+          <div class="project-badge-box">
+            <p><strong>Temel Çıktı:</strong> GitHub Pages üzerinden yayına hazır, duyarlı (responsive) ve etkileşimli dijital gezi rehberi.</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>İçerik Bölümleri</h4>
+          <ul class="footer-links">
+            <li><a href="#genel-bakis">Genel Bakış & Şehir Kimliği</a></li>
+            <li><a href="#tarihce">Tarihçe & Neoklasik Mimari</a></li>
+            <li><a href="#gezilecek-yerler">Tarihi Eserler & Müzeler</a></li>
+            <li><a href="#karnaval">İskeçe Karnavalı & Festivaller</a></li>
+            <li><a href="#gastronomi">Karioka & Gastronomi</a></li>
+            <li><a href="#interaktif">İnteraktif Quiz & Sözlük</a></li>
+            <li><a href="#ziyaret-rehberi">Ziyaret & Ulaşım Rehberi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Teknik Künye</h4>
+          <p><strong>Mimarisi:</strong> Semantic HTML5, CSS Grid/Flexbox, Vanilla JS ES6+</p>
+          <p><strong>Etkileşimler:</strong> Koyu/Açık Tema, Quiz Motoru, Web Speech API, Dinamik Filtreleme, Lightbox Modal</p>
+          <p><strong>Yayın Platformu:</strong> GitHub Pages & GitHub Repository</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 İskeçe (Xanthi) Tanıtım Portalı. Açık kaynaklı eğitim projesi.</p>
+        <p>Geliştirici: Öğrenci Projesi | Danışman / Araç: Google Antigravity</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       MODAL LIGHTBOX (RESİM BÜYÜTÜCÜ PENCERESİ)
+       =================================================================== -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Görsel Detayı">
+    <div class="lightbox-content">
+      <button type="button" class="lightbox-close-btn" id="lightboxClose" aria-label="Kapat">✕</button>
+      <img src="" alt="" class="lightbox-image" id="lightboxImg" style="object-fit: contain; max-width: 90vw; max-height: 72vh; width: auto; height: auto; display: block; margin: 0 auto; background: #0b1320;">
+      <div class="lightbox-caption">
+        <h3 id="lightboxTitle">İskeçe Görseli</h3>
+        <p id="lightboxDesc">Tarihi mekan açıklaması.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Dosyası (Ödev Standart Şablonu) -->
+  <script src="script.js?v=7"></script>
+</body>
+</html>
